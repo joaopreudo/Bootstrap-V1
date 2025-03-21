@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Meu Portfólio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .grid-container {
+            column-count: 3;
+            column-gap: 15px;
+        }
+        .grid-item {
+            break-inside: avoid;
+            margin-bottom: 15px;
+        }
+        .grid-item img {
+            width: 100%;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Barra de Navegação -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Meu Portfólio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projetos">Projetos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Seção Sobre -->
+    <section class="container my-5" id="sobre">
+        <h2>Sobre Mim</h2>
+        <p>Sou um desenvolvedor apaixonado por tecnologia e inovação. Tenho experiência com desenvolvimento web e sempre busco aprender novas tecnologias.</p>
+        <p>Trabalho com diversas ferramentas e frameworks modernos, incluindo Bootstrap, HTML e CSS</p>
+    </section>
+
+    <!-- Seção Projetos -->
+    <section class="container my-5" id="projetos">
+        <h2>Meus Projetos</h2>
+        <p>Já desenvolvi diversos projetos para web, desde sites institucionais até aplicações complexas.</p>
+        <p>Meu foco está na criação de interfaces intuitivas e eficientes para os usuários.</p>
+        <div class="grid-container">
+            <div class="grid-item"><img src="Img/download (2).jpg" alt="Projeto 1"></div>
+            <div class="grid-item"><img src="Img/download.jpg" alt="Projeto 2" height="80px"></div>
+            <div class="grid-item"><img src="Img/images.jpg" alt="Projeto 3"></div>
+        </div>
+    </section>
+
+    <!-- Seção Contato -->
+    <section class="container my-5" id="contato">
+        <h2>Contato</h2>
+        <form>
+            <div class="mb-3">
+                <label for="nome" class="form-label">Nome</label>
+                <input type="text" class="form-control" id="nome" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="mb-3">
+                <label for="mensagem" class="form-label">Mensagem</label>
+                <textarea class="form-control" id="mensagem" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
